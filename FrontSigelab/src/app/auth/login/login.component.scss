@@ -1,0 +1,27 @@
+.login-card {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  color: var(--color-muted);
+
+  .mat-card-title {
+    color: var(--color-accent);
+  }
+
+  .full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  .volver-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffcdd2;
+}
+}

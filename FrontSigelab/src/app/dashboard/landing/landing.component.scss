@@ -1,0 +1,230 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 170px;
+  height: 170px;
+  background-image: url('../../../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+
+
+.intro-section {
+  background-color: #2a2a2a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: #1e1e1ede;
+  border-radius: 12px;
+}
+
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.intro-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.6);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-grid.reverse {
+  flex-direction: row-reverse;
+}
+
+.intro-text {
+  flex: 1;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.intro-img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.img-inclusion-1 {
+  background-image: url('../../../assets/inclusion-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.img-inclusion-2 {
+  background-image: url('../../../assets/Inclusion2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.img-inclusion-3 {
+  background-image: url('../../../assets/inclusion3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.features-section {
+  text-align: center;
+  background-color: rgba(28, 28, 28, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #eee;
+}
+
+.feature-card {
+  margin: 2rem auto;
+  max-width: 700px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  color: #f5f5f5;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .identificacion {
+      margin: 0.5rem 0;
+      font-style: italic;
+      font-size: 0.75rem;
+    }
+
+    a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.3rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .footer-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #B79D9B;
+    background: transparent;
+    color: #B79D9B;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background 0.2s;
+
+    &:hover {
+      background-color: #B79D9B;
+      color: #1c1c1c;
+    }
+  }
+
+  .social-icons,
+  .store-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.1);
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+     &.twitter {
+      background-image: url('../../../assets/icons/twitter.png');
+    }
+
+    &.youtube {
+      background-image: url('../../../assets/icons/youtube.png');
+    }
+
+    &.instagram {
+      background-image: url('../../../assets/icons/instagram.png');
+    }
+
+    &.google-play {
+      width: 120px;
+      height: 40px;
+      background-image: url('../../../assets/icons/google-play.png');
+    }
+
+    &.app-store {
+      width: 120px;
+      height: 40px;
+      background-image: url('../../../assets/icons/app-store.png')
+    }
+  }
+}

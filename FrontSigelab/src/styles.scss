@@ -1,0 +1,124 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: dark,
+      primary: mat.$orange-palette,
+      tertiary: mat.$orange-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}:root {
+  --color-bg-dark: #30333A;
+  --color-toolbar: #51403D;
+  --color-surface: #1d1b1b;
+  --color-border: #9A8D96;
+  --color-muted: #B0A6A7;
+  --color-accent: #B79D9B;
+  --color-text-light: #E0A6A7;
+
+  --font-primary: 'Roboto', sans-serif;
+  --radius: 1rem;
+  --transition: all 0.3s ease;
+}
+body {
+  background-image: url('assets/fondo.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: var(--color-border);
+}
+
+/* =====================
+   🧱 COMPONENTES ANGULAR MATERIAL
+   ===================== */
+.mat-toolbar {
+  background-color: var(--color-toolbar);
+  color: var(--color-text-light);
+}
+
+.mat-sidenav {
+  background-color: var(--color-toolbar);
+  color: var(--color-text-light);
+}
+
+.mat-card {
+  background-color: var(--color-surface);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: var(--color-surface);
+  color: var(--color-text-light);
+}
+
+.mat-input-element,
+.mat-form-field-label {
+  color: var(--color-text-light);
+}
+
+.mat-raised-button {
+  background-color: var(--color-border);
+  color: white;
+}
+
+.mat-stroked-button {
+  border-color: var(--color-border);
+  color: var(--color-muted);
+}
+
+/* =====================
+   🌙 MODO CLARO OPCIONAL
+   ===================== */
+.light-theme {
+  background-color: white;
+  color: #333;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+button.toggle-btn {
+  background: transparent;
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button.toggle-btn:hover {
+  background-color: var(--color-border);
+  color: white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

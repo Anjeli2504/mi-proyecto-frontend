@@ -1,0 +1,37 @@
+.ferias-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.feria-card {
+  padding: 1rem;
+  border-radius: 1rem;
+  border-left: 6px solid #f7ab78ef;
+  background-color: #1f1f1f;
+  color: #f8f8f8;
+  transition: box-shadow 0.2s ease;
+}
+
+.feria-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+mat-card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #26c6da;
+}
+
+mat-card-subtitle {
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+
+.mapa-container {
+  margin-top: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

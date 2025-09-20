@@ -1,0 +1,19 @@
+<div class="ofertas-container">
+  <mat-card *ngFor="let oferta of ofertas" class="oferta-card mat-elevation-z3">
+    <mat-card-header>
+      <mat-icon mat-card-avatar color="warn">work</mat-icon>
+      <mat-card-title>{{ oferta.puesto }}</mat-card-title>
+      <mat-card-subtitle>{{ oferta.empresa }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p><strong>Requisitos:</strong> {{ oferta.requerimientos }}</p>
+    </mat-card-content>
+
+  <mat-card-actions align="end">
+    <a mat-stroked-button color="accent" [routerLink]="['/oferta', oferta.id]">
+      <mat-icon>visibility</mat-icon> &nbsp; Ver oferta
+    </a>
+  </mat-card-actions>
+  </mat-card>
+</div>

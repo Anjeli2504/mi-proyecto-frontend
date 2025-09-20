@@ -1,0 +1,25 @@
+.perfil-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-surface);
+  color: var(--color-muted);
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+mat-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--color-surface);
+  color: var(--color-muted);
+}

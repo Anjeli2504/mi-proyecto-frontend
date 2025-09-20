@@ -1,0 +1,33 @@
+.ofertas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 8px;
+}
+
+
+  h3, h4, p, span, strong {
+    color: #f0f0f0 !important;
+  }
+
+.oferta-card {
+  width: 320px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.oferta-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+mat-card-title {
+  font-weight: 600;
+  color: #E0A6A7;
+}
+
+mat-card-subtitle {
+  color: #555;
+}

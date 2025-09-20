@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class="header-bar">
+  <span class="logo">SIGELAB</span>
+  <span class="spacer"></span>
+
+  <ng-container [ngSwitch]="rol">
+    <!-- USUARIO -->
+    <ng-container *ngSwitchCase="'USUARIO'">
+      <a mat-button routerLink="/home">Inicio</a>
+      <a mat-button routerLink="/mis-ferias">Mis Ferias</a>
+      <a mat-button routerLink="/mis-ofertas">Mis Ofertas</a>
+      <a mat-button routerLink="/perfil">Perfil</a>
+    </ng-container>
+
+    <!-- EMPRESA -->
+    <ng-container *ngSwitchCase="'EMPRESA'">
+      <a mat-button routerLink="/empresa">Panel Empresa</a>
+      <a mat-button routerLink="/ver-ofertas">Ver Ofertas</a>
+    </ng-container>
+
+    <!-- ADMIN -->
+    <ng-container *ngSwitchCase="'ADMIN'">
+      <a mat-button routerLink="/admin">Panel Admin</a>
+    </ng-container>
+  </ng-container>
+
+  <button mat-button color="warn" (click)="logout()">Cerrar sesión</button>
+</mat-toolbar>

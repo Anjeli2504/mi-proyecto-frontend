@@ -1,0 +1,27 @@
+<div class="ferias-container">
+  <ng-container *ngIf="ferias.length > 0; else sinFerias">
+    <mat-card *ngFor="let feria of ferias" class="feria-card mat-elevation-z3">
+      <mat-card-header>
+        <mat-icon mat-card-avatar color="accent">event</mat-icon>
+        <mat-card-title>{{ feria.titulo }}</mat-card-title>
+        <mat-card-subtitle>{{ feria.fecha | date:'short' }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card class="formulario-card" *ngIf="feria.formulario">
+  <mat-card-title>Formulario enviado</mat-card-title>
+  <mat-list>
+    <mat-list-item><strong>Cédula:</strong> {{ feria.formulario.cedula }}</mat-list-item>
+    <mat-list-item><strong>Nombre:</strong> {{ feria.formulario.nombre }}</mat-list-item>
+    <mat-list-item><strong>Teléfono:</strong> {{ feria.formulario.telefono }}</mat-list-item>
+  </mat-list>
+</mat-card>
+    </mat-card>
+  </ng-container>
+
+  <ng-template #sinFerias>
+    <mat-card class="feria-card sin-ferias">
+      <mat-card-content>
+        <p>No tienes ferias registradas aún.</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</div>

@@ -1,0 +1,19 @@
+.oferta-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-left: 4px solid #E0A6A7;
+  transition: box-shadow 0.2s ease;
+}
+
+.oferta-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sin-ofertas {
+  background-color: #1d1d1d;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}

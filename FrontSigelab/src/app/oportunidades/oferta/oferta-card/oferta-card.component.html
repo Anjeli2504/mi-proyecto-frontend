@@ -1,0 +1,25 @@
+<mat-card class="oferta-card">
+  <mat-card-title>{{ oferta.puesto }}</mat-card-title>
+  <mat-card-subtitle>{{ oferta.empresa }}</mat-card-subtitle>
+
+  <mat-card-content>
+    <p>{{ oferta.requerimientos }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <a mat-stroked-button color="accent" [routerLink]="['/oferta', oferta.id]">
+    Ver Detalles
+    </a>
+
+    <button mat-button color="primary" (click)="showUpload = !showUpload">
+      Aplicar
+    </button>
+  </mat-card-actions>
+
+  <div *ngIf="showUpload" style="margin-top: 12px;">
+    <input type="file" accept=".pdf" (change)="onFileSelected($event)" />
+    <button mat-raised-button color="accent" (click)="aplicar()" [disabled]="!cvFile || isApplying">
+      Enviar Hoja de Vida
+    </button>
+  </div>
+</mat-card>

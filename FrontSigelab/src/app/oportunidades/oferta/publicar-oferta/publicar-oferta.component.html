@@ -1,0 +1,22 @@
+<mat-card class="mat-elevation-z4">
+  <form [formGroup]="ofertaForm" (ngSubmit)="publicarOferta()">
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Puesto</mat-label>
+      <input matInput formControlName="puesto" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Empresa</mat-label>
+      <input matInput formControlName="empresa" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Requerimientos</mat-label>
+      <textarea matInput formControlName="requerimientos" rows="4" required></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!ofertaForm.valid">
+      Publicar Oferta
+    </button>
+  </form>
+</mat-card>

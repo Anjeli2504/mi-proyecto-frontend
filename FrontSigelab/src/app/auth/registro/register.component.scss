@@ -1,0 +1,21 @@
+.register-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  color: var(--text);
+}
+
+mat-card-title {
+  color: var(--color-accent);
+}
+
+::ng-deep .snackbar-success {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+<mat-card>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="w-full mb-4">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full mb-4">
+      <mat-label>Teléfono</mat-label>
+      <input matInput formControlName="telefono" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full mb-4">
+      <mat-label>Cédula</mat-label>
+      <input matInput formControlName="cedula" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary">Confirmar</button>
+  </form>
+</mat-card>

@@ -1,0 +1,25 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-content>
+    <br>
+    <form [formGroup]="perfilForm" (ngSubmit)="guardar()">
+      <!-- Nombre -->
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" placeholder="Nombre completo">
+      </mat-form-field>
+
+      <!-- Email -->
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="usuario@ejemplo.com">
+      </mat-form-field>
+
+      <p *ngIf="fechaRegistro">Fecha de registro: {{ fechaRegistro | date:'medium' }}</p>
+
+      <!-- Botón guardar -->
+      <button mat-raised-button color="primary" type="submit">
+        Guardar cambios
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>

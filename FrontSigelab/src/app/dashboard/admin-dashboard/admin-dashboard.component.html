@@ -1,0 +1,26 @@
+<div class="container-admin">
+  <h2>Agregar Feria</h2>
+<mat-card class="mat-elevation-z4">
+  <form [formGroup]="feriaForm" (ngSubmit)="crearFeria()">
+    <mat-form-field class="w-full"><mat-label>Título</mat-label>
+      <input matInput formControlName="titulo" required>
+    </mat-form-field>
+    <mat-form-field class="w-full"><mat-label>Descripción</mat-label>
+      <input matInput formControlName="descripcion" required>
+    </mat-form-field>
+    <mat-form-field class="w-full"><mat-label>Fecha</mat-label>
+      <input matInput type="date" formControlName="fecha" required>
+    </mat-form-field>
+    <mat-form-field class="w-full"><mat-label>Ubicación</mat-label>
+      <input matInput formControlName="ubicacion" required>
+    </mat-form-field>
+    <mat-form-field class="w-full">
+    <mat-label>Link de Mapa</mat-label>
+    <input matInput formControlName="mapa" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Registrar Feria</button>
+  </form>
+</mat-card>
+
+<br><br>
+</div>

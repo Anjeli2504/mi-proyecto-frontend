@@ -1,0 +1,33 @@
+<mat-card class="register-card mat-elevation-z8">
+  <mat-card-title>Registro de Usuario</mat-card-title>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-layout">
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Nombre completo</mat-label>
+      <input matInput formControlName="nombre" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput type="email" formControlName="email" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Contraseña</mat-label>
+      <input matInput type="password" formControlName="password" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>¿Padece alguna discapacidad?</mat-label>
+      <mat-select formControlName="discapacidad">
+        <mat-option value="No">No</mat-option>
+        <mat-option value="Visual">Visual</mat-option>
+        <mat-option value="Auditiva">Auditiva</mat-option>
+        <mat-option value="Motora">Motora</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" type="submit">Registrarme</button>
+  </form>
+</mat-card>

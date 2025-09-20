@@ -1,0 +1,33 @@
+.ofertas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.oferta-card {
+  width: 340px;
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 5px solid #fb8c00;
+  background-color: #2a2a2a;
+  color: #1d171a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oferta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fb8c00;
+}
+
+mat-card-subtitle {
+  font-size: 0.95rem;
+  color: #cfd8dc;
+}
