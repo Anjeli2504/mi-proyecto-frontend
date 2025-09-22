@@ -17,7 +17,8 @@ import { VerOfertaComponent} from './oportunidades/oferta/ver-oferta/ver-oferta.
 import { OfertaEmpresaComponent} from './oportunidades/oferta/oferta-empresa/oferta-empresa.component';
 
 export const routes: Routes = [
-  { path: '', component: LandingComponent },
+
+  { path: 'inicio', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
@@ -30,6 +31,7 @@ export const routes: Routes = [
   { path: 'empresa', component: EmpresaDashboardComponent, canActivate: [AuthGuard] }, 
   { path: 'mis-ferias', component: MisFeriasComponent, canActivate: [AuthGuard] }, 
   { path: 'mis-ofertas', component: MisOfertasComponent, canActivate: [AuthGuard] },  
-  { path: 'ver-ofertas', component: OfertaEmpresaComponent, canActivate: [AuthGuard] }, 
-  { path: '**', redirectTo: '' }
+  { path: 'ver-ofertas', component: OfertaEmpresaComponent, canActivate: [AuthGuard] },
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '**', redirectTo: '/inicio' }
 ];
