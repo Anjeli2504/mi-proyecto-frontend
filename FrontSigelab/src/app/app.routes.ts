@@ -17,7 +17,6 @@ import { VerOfertaComponent} from './oportunidades/oferta/ver-oferta/ver-oferta.
 import { OfertaEmpresaComponent} from './oportunidades/oferta/oferta-empresa/oferta-empresa.component';
 
 export const routes: Routes = [
-
   { path: 'inicio', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
